@@ -1,0 +1,392 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+.logo-1 img{
+	width: 150px;
+	height: 130px;
+	text-align: center;
+}
+
+link{
+	
+}
+
+nav.midias-sociais{
+	float:right;
+	margin-top: -90px;
+	margin-right: 9%;
+}
+
+nav.midias-sociais ul{
+	list-style-type: none;
+	display:flex;
+}
+
+
+nav.midias-sociais img{
+	width:40px;
+	height: 40px;
+	margin-right: 35px;
+}
+
+header{
+	background-color: white;
+	padding: 0 2%;
+}
+
+.logo-1{
+	float: left;
+	width: 100px;
+	height: auto;
+	margin-left: 5%;
+}
+
+.banner-principal{
+	width: 100%;
+	padding: 0 2%;
+	height: auto;
+}
+
+.br{
+	height: 500px;
+	background-repeat: no-repeat;
+	background-image: url("img/Market launch.gif");
+}
+
+.form-container{
+	float:right;
+	margin-top: -20px;
+	margin-right: 40px;
+	width: 32%;
+	height: 100%;
+	position: relative;
+	background-color: #dfe3e6;
+}
+
+.form-container h2{
+	padding: 20px 18px;
+	text-align: center;
+	font-style: Bold 700 italic;
+	font-size: 20px;
+	line-height: 30px; /*distância entre as linhas*/
+	background-color: orange;
+}
+
+.form-container form{
+	margin-top:10px;
+	text-align: center;
+	margin-right: 0;
+}
+
+
+.form-container input[type=text],
+.form-container input[type=email]{
+	width: 80%;
+	border: 1px solid #a8dba8;
+	height: 40px;
+	padding-left: 10px;
+	line-height: 45px;
+	margin-top: 5px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.form-container form p{
+	font-size: 20px;
+	margin-top: 30px;
+	margin-right:65%;
+	font-style: Regular 400 italic;
+}
+
+.form-container form p:nth-of-type(3){
+	font-size: 15px;
+	width: 100%;
+	margin-top: 30px;
+	color:#7f9298;
+}
+
+
+.transform{  /*submit*/
+	width: 60%;
+	border:none;
+	background-color: #1cb08d;
+	height: 50px;
+	margin-top: 40px;
+	font-size: 22px;
+	color: white;
+	border-radius: 5px;
+	
+}
+.transform:hover{
+	animation-name: botao;
+	animation-duration: 0.2s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes botao{
+	0%{
+		transform: rotate(0deg);
+	}
+	25%{
+		transform: rotate(5deg);
+	}
+	50%{
+		transform: rotate(0deg);
+	}
+	75%{
+		transform: rotate(-5deg)
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+.whatsapp{
+	position: fixed;
+	margin-left:87%;
+	transition: 1s;
+}
+
+.whatsapp img{
+	width: 70px;
+	height: 70px;
+	margin-top: -60px;
+}
+
+
+
+section.Tema{
+	padding: 35px 0;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	background-color: #9DE8D3;	
+}
+
+section.Tema h2{
+	width: 100%;
+	max-width: 650px;
+	float: left;
+	color: rgb(40,40,40);
+	font-size: 50px;
+	margin-left: 10%;
+	margin-top: 40px;
+	line-height: 50px;
+	height: auto;
+}
+
+section.Tema h1{
+	width: 60%;
+	float: left;
+	margin-left: 1%;
+	margin-top: 10px;
+	color: rgba(40,40,40,0.7);
+}
+
+section.Tema img{
+	margin-top: -35px;
+	margin-right: 5%;
+}
+
+.seta{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	margin-top: 60px;
+	margin-bottom: -70px;
+	left: 50%;
+	margin-left:-30px; /*precisa para centralizar, pois os 50% left é baseado no canto e não no meio*/
+	background-image:url('img/seta.png');
+	background-size: cover;
+	display: block;
+}
+
+.mosaico{
+	background-color: #0d404e;
+	padding:15%;
+}
+
+.flex-mosaico{
+	display: flex;
+	margin-top: 5%;
+}
+
+.img-mosaico{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width:40%;
+	border-radius: 70px 15px 70px 15px;
+}
+
+.text-mosaico{
+	padding: 40px;
+	width: 60%;
+}
+
+.text-mosaico p {
+	font-size: 20px;
+	color: white;
+}
+
+.text-mosaico a{
+	font-size: 20px;
+	color: orange;
+}
+
+footer{
+	text-align: center;
+	padding: 20px 0;
+}
+
+footer p{
+	margin-top: 15px;
+}
+
+/*Aplicação do Responsivo*/
+
+@media screen and (max-width: 313px){
+	section.Tema img{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 940px){
+	header{
+		text-align: center;
+	}
+	.logo-1{
+		float: none;
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	nav.midias-sociais{
+		display:flex;
+		margin-right: 0;
+	}
+
+	nav.midias-sociais ul{
+		list-style-type: none;
+		flex-wrap: wrap;
+	}
+
+
+	nav.midias-sociais img{
+		width:40px;
+		height: 40px;
+	}
+	.br{
+		background-size: contain;
+		background-position: relative;
+	}
+	.container{
+		text-align: center;
+
+	}
+
+	.form-container{
+		float: none;
+		display: inline-block;
+		margin-right: 0;
+		width: 80%;
+		margin-top: 50%;
+	}
+	section{
+		text-align: center;
+	}
+	section.Tema{
+		display: inline-block;
+		height: auto;
+		position: relative;
+		margin-top: 50%;
+	}
+
+	section.Tema h2{
+		float: none;
+		display: inline-block;
+		margin-left: 0;
+	}
+
+	section.Tema h1{
+		float: none;
+		margin-left: 0;
+		display: inline-block;
+	}
+
+	section.Tema img{
+		margin-top: 0;
+		margin-right: 0;
+	}	
+
+	.flex-mosaico{
+		display: block;
+	}
+
+	.img-mosaico{
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width:100%;
+		height: 300px;
+	}
+	.text-mosaico{
+		width:100%;
+		padding-top: 0;
+	}
+
+	.whatsapp{
+		position: absolute;
+		margin-top: -5%;
+		transition: 1s;
+	}
+
+	.whatsapp img{
+		width: 50px;
+		height: 50px;	
+	}
+}
+
+@media screen and (max-width: 800px){
+
+	nav.midias-sociais ul{
+		position: relative;
+		margin-top: 100px;
+	}
+	nav.midias-sociais img{
+		width: 30px;
+		height: 30px;
+	}
+}
+
+
+@media screen and (max-width: 1132px){
+	section.Tema img{
+		margin-top: 0;
+		margin-right: 0;
+		display: inline-block;
+	}	
+	section.Tema h1{
+		width: 96%;
+	}
+}
+
+

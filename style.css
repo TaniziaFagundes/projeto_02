@@ -256,20 +256,31 @@ footer p{
 	section.Tema img{
 		width: 100%;
 	}
-	nav.midias-sociais{
-		float:none;
-		display: inline-block;
-		text-align: center;
-	}
+	.logo-1{
+		float: none;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 0;
+		width: 80%;
 	}
 
-@media screen and (max-width: 940px){
+	nav.midias-sociais{
+		display:flex;
+		margin-right: 0;
+		width: 100%;
+		justify-content: center;
+
+	}
+}
+
+@media screen and (max-width: 900px){
 	header{
 		text-align: center;
 	}
 	.logo-1{
 		float: none;
-		display: inline-block;
+		display: flex;
+		justify-content: space-between;
 		margin-left: 0;
 		width: 100%;
 	}
@@ -278,7 +289,8 @@ footer p{
 		display:flex;
 		margin-right: 0;
 		width: 100%;
-		margin: auto;
+		justify-content: flex-end;
+
 	}
 
 	nav.midias-sociais ul{

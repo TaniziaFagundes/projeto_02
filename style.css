@@ -19,6 +19,7 @@ html,body{
 	clear: both;
 }
 
+
 .logo-1 img{
 	width: 150px;
 	height: 130px;
@@ -260,12 +261,7 @@ footer p{
 		display: inline-block;
 		text-align: center;
 	}
-	.logo-1{
-		text-align: center;
 	}
-
-	
-}
 
 @media screen and (max-width: 940px){
 	header{
@@ -275,6 +271,7 @@ footer p{
 		float: none;
 		display: inline-block;
 		margin-left: 0;
+		width: 100%;
 	}
 
 	nav.midias-sociais{

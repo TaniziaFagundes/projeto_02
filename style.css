@@ -277,6 +277,8 @@ footer p{
 	nav.midias-sociais{
 		display:flex;
 		margin-right: 0;
+		width: 100%;
+		margin: auto;
 	}
 
 	nav.midias-sociais ul{

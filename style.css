@@ -368,6 +368,19 @@ footer p{
 		padding-top: 0;
 	}
 
+	.text-mosaico p {
+		font-size: 20px;
+		color: white;
+		text-align: justify;
+		padding: 0;
+
+	}
+
+	.text-mosaico a{
+		font-size: 20px;
+		color: orange;
+	}
+
 }
 
 @media screen and (max-width: 800px){

@@ -263,6 +263,13 @@ footer p{
 		/*text-align: center*/
 	}
 
+	nav.midias-socias img{
+		width: 35px;
+		margin: 0;
+		height: 30px;
+		padding: 0 5px;
+	}
+
 	nav.midias-sociais{
 		display:flex;
 		margin-right: 0;
